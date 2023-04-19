@@ -125,9 +125,7 @@ class NeuralNetwork:
 
 		output_unscaling_layer = self.unscaling_layer(output_perceptron_layer_2)
 
-		output_bounding_layer = self.bounding_layer(output_unscaling_layer)
-
-		return output_bounding_layer
+		return self.bounding_layer(output_unscaling_layer)
 
 
 	def calculate_batch_output(self, input_batch):

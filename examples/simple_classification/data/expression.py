@@ -93,9 +93,7 @@ class NeuralNetwork:
 
 		output_perceptron_layer_1 = self.perceptron_layer_1(output_scaling_layer)
 
-		output_probabilistic_layer = self.probabilistic_layer(output_perceptron_layer_1)
-
-		return output_probabilistic_layer
+		return self.probabilistic_layer(output_perceptron_layer_1)
 
 
 	def calculate_batch_output(self, input_batch):
